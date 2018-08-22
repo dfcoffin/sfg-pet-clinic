@@ -9,5 +9,5 @@ import org.springframework.data.repository.CrudRepository;
  * Date: 8/22/18
  * Time: 1:35 PM
  **/
-public interface PetRypeRepository extends CrudRepository<PetType, Long> {
+public interface PetTypeRepository extends CrudRepository<PetType, Long> {
 }
