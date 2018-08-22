@@ -1,8 +1,21 @@
 package guru.springframework.sfgpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+/**
+ * Created by REMI Networks
+ * User: don
+ * Date: 8/4/18
+ * Time: 3:14 PM
+ **/
+@MappedSuperclass
 public class Person extends BaseEntity{
 
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
 
     public String getFirstName() {
