@@ -9,4 +9,5 @@ import guru.springframework.sfgpetclinic.model.PetType;
  * Time: 7:20 PM
  **/
 public interface PetTypeService extends CrudService<PetType, Long> {
+
 }
