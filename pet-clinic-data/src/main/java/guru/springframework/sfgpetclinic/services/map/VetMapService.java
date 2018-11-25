@@ -19,11 +19,11 @@ import java.util.Set;
 @Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
+    private final SpecialtyService specialtyService;
+
     public VetMapService(SpecialtyService specialtyService) {
         this.specialtyService = specialtyService;
     }
-
-    private final SpecialtyService specialtyService;
 
     @Override
     public Set<Vet> findAll() {
@@ -57,7 +57,6 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public void deleteById(Long id) {
-        super.findById(id);
+        super.deleteById(id);
     }
-
 }
